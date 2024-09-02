@@ -10,13 +10,19 @@ import { Button } from "@/components/ui/button";
 import { IoIosSend , IoMdSend ,IoIosChatboxes} from "react-icons/io";
 import { Textarea } from "@/components/ui/textarea";
 
+interface MessageType {
+  type: number;
+  message: string;
+}
+
 export default function Home() {
   const [ans, setAns] = useState('');
   const [req, setReq] = useState('');
   const [inputValue, setInputValue] = useState('');
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState<MessageType[]>([]);
 
-  const messagesEndRef = useRef(null);
+
+  const messagesEndRef = useRef<HTMLDivElement>(null);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
