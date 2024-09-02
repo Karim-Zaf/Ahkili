@@ -23,7 +23,7 @@ To run this project locally, follow these steps:
 
 ## Preview
 
-![image](https://github.com/Karim-Zaf/ToDoLista/blob/main/Interface/Lists%20Interface.png)
+![image](https://github.com/Karim-Zaf/Ahkili/blob/main/public/Ahkili%20screen%20shot.png)
 
 
 ## Contributing
