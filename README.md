@@ -12,7 +12,7 @@ Ahkili is a web application built using Next.js and Tailwind CSS that allows use
 
 ## Getting Started
 
-Here is the link to the project: [Ahkili](https://your-project-link.vercel.app/)
+Here is the link to the project: [Ahkili](https://ahkili.vercel.app/)
 
 To run this project locally, follow these steps:
 
