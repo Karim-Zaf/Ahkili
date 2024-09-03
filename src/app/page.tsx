@@ -43,7 +43,7 @@ export default function Home() {
           <CardTitle className="text-3xl">Ahkili</CardTitle>
         </CardHeader>
 
-        <CardContent className="h-[67vh] overflow-y-auto">
+        <CardContent className="h-[60vh] overflow-y-auto">
           {messages.length === 0 && <h1 className="text-center text-3xl m-auto h-full w-full flex flex-col justify-center items-center">Welcome to Ahkili, Ask me anything!<IoIosChatboxes className="mt-7"/></h1>}
           {messages.map((message: any, index: any) => (
             <Message key={index} type={message.type} message={message.message} />
@@ -52,7 +52,7 @@ export default function Home() {
         </CardContent>
 
         <CardFooter className='w-full bg-slate-50 pt-4 rounded-b-xl'>
-          <form className='w-full h-[9vh] flex gap-5 justify-center items-center' onSubmit={async (e) => {
+          <form className='w-full h-[13vh] flex gap-5 justify-center items-center' onSubmit={async (e) => {
             e.preventDefault();
             const prev = messages;
             setInputValue('')
